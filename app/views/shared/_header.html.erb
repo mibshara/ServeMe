@@ -8,7 +8,7 @@
 					<% end %>
 				</li>
 				<li class="active">
-					<%= link_to 'Store', shop_path %>
+					<%= link_to 'Store', root_path %>
 				</li>
 				<li class="divider"><span></span></li>
 				<li>
@@ -57,24 +57,14 @@
 								<%= link_to 'Home', root_path %>
 							</li>
 							<li>
-								<%= link_to 'Store', shop_path %>
+								<%= link_to 'Store', root_path %>
 							</li>
 							<li>
-								<%= link_to 'About', about_path %>
+								<%= link_to 'About', root_path %>
 							</li>
 							<li>
-								<%= link_to new_contact_path do %>
+								<%= link_to root_path do %>
 									<i class="fa fa-paper-plane"></i>Contact
-								<% end %>
-							</li>
-							<li>
-								<% if @cart.total_price > 0 %>
-							  		<%= link_to @cart, class: 'menu-cart' do  %>
-							    		<i class="fa fa-shopping-cart"></i>
-							    		<%= number_to_currency @cart.total_price %>
-						  			<% end %>
-								<% else %>
-						  		<a href="#" class="menu-cart"><i class="fa fa-shopping-cart"></i> NZ$0.00</a>
 								<% end %>
 							</li>
 						</ul>
