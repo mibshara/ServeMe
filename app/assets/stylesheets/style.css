@@ -1,23 +1,4 @@
 @charset "UTF-8";
-/* style.scss */
-/* CONTENTS
- * 1. General Styles
- * 2. Typography
- * 3. Form & inputs
- * 4. Offscreen Navigation
- * 5. Icon font
- * 6. Home
- * 7. About
- * 8. Catalog
- * 9. Blog
- * 10. Contact
- * 11. Bootstrap Theme
- * 12. Buttons
- * 13. Slick Carousel
- * 14. Slick Carousel Theme
- * 15. Colors
- * 16. Lightbox */
-/* GENERAL STYLES */
 a,
 button span {
   -webkit-transition: all 0.5s ease;
