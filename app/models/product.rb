@@ -1,5 +1,7 @@
 class Product < ActiveRecord::Base
 
+  before_destroy :ensure_not_product_item
+
   has_many :product_items
 
   belongs_to :category
@@ -19,5 +21,5 @@ class Product < ActiveRecord::Base
       return false
     end
   end
-  
+
 end
