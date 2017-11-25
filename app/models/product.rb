@@ -10,4 +10,14 @@ class Product < ActiveRecord::Base
 
   has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>" }
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
+
+  def ensure_not_product_item
+    if product_itmes.empty?
+      return true
+    else
+      errors.add(:base, 'You have Product Items')
+      return false
+    end
+  end
+  
 end
