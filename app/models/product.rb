@@ -1,4 +1,7 @@
 class Product < ActiveRecord::Base
+
+  has_many :product_items
+
   belongs_to :category
 
   validates :title, :description, presence: true
