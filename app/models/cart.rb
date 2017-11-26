@@ -11,4 +11,8 @@ class Cart < ApplicationRecord
     current_item
     end
 
+    def tatal_price
+
+    end
+
 end
