@@ -21,6 +21,9 @@
 <%= rendr 'cars/cart' %>
 <br>
 <h5>Tota: <%= number_to_currency @cart.total_price %></h5>
+<br>
+<%= link_to 'Back to Store', shop_path%>
+<%= link_to 'Empty your cart', @cart, method: :delete, data: {confirm: 'Are you sure?'}%>
 </div>
 	</div>
 </section>
