@@ -21,7 +21,7 @@
 <% @cart.product_items.each do |item| %>
 <ul>
 	<li>
-		<%= item.quantity %> &times; <%= %>
+		<%= item.quantity %> &times; <%= item.product.title %>
 	</li>
 </ul>
 <% end %>

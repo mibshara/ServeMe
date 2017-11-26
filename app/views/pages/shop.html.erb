@@ -36,7 +36,7 @@
 								<p>
 								<%= product.description %>
 								</p>
-								<%= link_to root_path, class: 'btn btn-default' do %>
+								<%= button_to product_items_path(product_id: product), class: 'btn btn-default' do%>
 									<i class="fa fa-shopping-cart"></i> Add to cart
 								<% end %>
 							</div>
