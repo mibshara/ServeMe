@@ -16,15 +16,11 @@
 <section class="product-list">
 	<div class="container">
 <div class="col-md-12">
-<h2>Carts Details</h2>
+<h2>Cart Details</h2>
 <br>
-<% @cart.product_items.each do |item| %>
-<ul>
-	<li>
-		<%= item.quantity %> &times; <%= item.product.title %>
-	</li>
-</ul>
-<% end %>
+<%= rendr 'cars/cart' %>
+<br>
+<h5>Tota: <%= number_to_currency @cart.total_price %></h5>
 </div>
 	</div>
 </section>
