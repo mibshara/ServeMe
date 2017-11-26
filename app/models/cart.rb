@@ -12,7 +12,7 @@ class Cart < ApplicationRecord
     end
 
     def tatal_price
-
+      product_items.to_a.sum{|item| item.total_price}
     end
 
 end
